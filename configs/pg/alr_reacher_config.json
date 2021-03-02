@@ -1,0 +1,72 @@
+{
+  "exp_name": "weight0.01aaaa1",
+  "game": "alr_envs:ALRReacherSparseBalanced-v0",
+  "n_envs": 1,
+  "n_test_envs": 5,
+  "rollout_steps": 16384,
+  "max_episode_length": 1000,
+  "max_entropy_coeff": 0.0,
+
+  "use_gae": true,
+  "gae_scaling": 0.95,
+  "discount_factor": 0.99,
+
+  "norm_observations": true,
+  "norm_rewards": false,
+  "norm_advantages": true,
+  "clip_observations": 0.0,
+  "clip_rewards": 0.0,
+  "clip_advantages": 0.0,
+
+  "proj_type": "w2",
+  "entropy_eq": false,
+  "entropy_first": false,
+  "scale_prec": true,
+  "mean_bound": 0.03,
+  "cov_bound": 0.001,
+  "target_entropy": -1.0,
+  "temperature": 0.5,
+  "entropy_schedule": false,
+  "trust_region_coeff": 8.0,
+
+  "optimizer": "adam",
+  "lr": 0.0003,
+  "optimizer_vf": "adam",
+  "lr_vf": 0.00045,
+  "lr_schedule": "",
+
+  "train_steps": 610,
+  "epochs": 20,
+  "val_epochs": 10,
+
+  "num_minibatches": 64,
+  "entropy_penalty_coeff": 0.0,
+  "vf_coeff": 0.0,
+
+  "importance_ratio_clip": 0.0,
+  "clip_vf": 0.0,
+  "clip_grad_norm": 0.0,
+
+  "initialization": "orthogonal",
+  "share_weights": false,
+  "activation": "tanh",
+  "policy_type": "diag",
+  "minimal_std": 1e-5,
+  "init_std": 1.0,
+  "contextual_std": true,
+  "hidden_sizes_policy": [64,64],
+  "hidden_sizes_vf": [64,64],
+
+  "do_regression": false,
+  "regression_iters": 5,
+  "lr_reg": 3e-4,
+  "optimizer_reg": "adam",
+
+  "cpu": true,
+  "advanced_logging": true,
+  "log_interval": 1,
+  "save_interval": 0,
+  "out_dir": "results/alr-balance",
+  "seed": 20,
+  "dtype": "float64"
+}
