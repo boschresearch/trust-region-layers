@@ -1,5 +1,8 @@
 # Differentiable Trust Region Layers for Deep Reinforcement Learning
 
+ ![image](trpl_overview.png) 
+
+
 This is the official code for the paper "Differentiable Trust Region Layers for Deep Reinforcement Learning" by Fabian Otto et al. accepted to ICLR 2021.
 The code allows the users to reproduce and extend the results reported in the study.
 Please cite the above paper when reporting, reproducing or extending the results.
